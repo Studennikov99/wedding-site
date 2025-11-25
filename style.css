@@ -1,0 +1,19 @@
+body { margin:0; font-family: 'Playfair Display', serif; color:#3e2f2f; background:#fffcf5; }
+.fade-block { opacity:0; transform: translateY(18px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.fade-block.visible { opacity:1; transform: translateY(0); }
+h1, h2, h3 { font-family: 'Great Vibes', cursive; color:#890000; }
+p { line-height:1.6; font-size:1.05em; }
+.color-circles { display:flex; justify-content:center; gap:20px; flex-wrap:wrap; margin-top:16px; }
+.color-circle { width:50px; height:50px; border-radius:50%; border:3px solid #890000; }
+.photo-frame { max-width:420px; margin:32px auto; border:8px solid #fff; border-radius:16px; overflow:hidden; box-shadow:0 8px 24px rgba(0,0,0,0.15); }
+@media (max-width:720px) {
+    h1 { font-size:2.4em !important; }
+    h2 { font-size:1.9em !important; }
+    .fade-block { padding:30px 16px !important; }
+    .program-item { margin:20px 0; }
+    .photo-frame { max-width:300px; }
+    .color-circle { width:40px; height:40px; }
+    .cover-names h1 { font-size:2.8em !important; }
+    .cover-date { font-size:2.2em !important; }
+    .cover-venue { font-size:1.1em !important; }
+}
